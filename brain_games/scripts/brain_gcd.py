@@ -1,4 +1,4 @@
-"""Calculator Game."""
+"""Greatest common divisor Game."""
 
 import prompt
 import random
