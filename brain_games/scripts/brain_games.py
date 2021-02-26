@@ -1,16 +1,11 @@
 #!/usr/bin/env python
-import prompt
+"""This is the main script."""
 
+from brain_games.cli import welcome_user
 
 def main():
-    """Return a welcome line.
-
-    Returns:
-        name of user
-    """
-    name = prompt.string('May I have your name? ')
-    print('Welcome to the Brain Games!\nHello, {}'.format(name))
-    return name
+    """Use welcome_user function."""
+    welcome_user()
 
 
 if __name__ == '__main__':
