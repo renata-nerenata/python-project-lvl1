@@ -34,7 +34,7 @@ def main():
     Print task three times
     """
     name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     counter = 0
     n_times = 0
     while n_times < 3:
