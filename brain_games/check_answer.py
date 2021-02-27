@@ -16,9 +16,7 @@ def check_answer(user_answer, correct_answer, name, counter):
         print("Correct!")
         counter += 1
     else:
-        print('"{}" is wrong answer ;(. '
-              'Correct answer was "{}".\nLet\'s '
-              'try again, {}!'.format(user_answer, correct_answer, name))
+        print("'{}' is wrong answer ;(. Correct answer was '{}'.\nLet\'s try again, {}!".format(user_answer, correct_answer, name))
     return counter
 
 
