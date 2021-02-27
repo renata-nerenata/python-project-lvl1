@@ -11,6 +11,12 @@ import math
 
 
 def is_prime(number):
+    """Check prime number
+    Args:
+        number: the random number
+    Returns:
+        str answer
+    """
     if number == 2:
         return 'yes'
     if number % 2 == 0 or number <= 1:
