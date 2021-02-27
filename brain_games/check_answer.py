@@ -13,11 +13,12 @@ def check_answer(user_answer, correct_answer, name, counter):
             str answer
     """
     if user_answer == correct_answer:
+        counter += 1
         print("Correct!")
-        #counter += 1
+        return counter
     else:
         print("'{}' is wrong answer ;(. Correct answer was '{}'.\nLet\'s try again, {}!".format(user_answer, correct_answer, name))
-    return counter
+
 
 
 if __name__ == '__main__':
