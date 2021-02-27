@@ -23,8 +23,8 @@ def even_number(number):
 def print_random_number():
     """Engine of the Game."""
     number = random.randint(1, 1000000)
-    print('Question: ', number)
-    user_answer = prompt.string('Your answer: ')
+    print('Question:', number)
+    user_answer = prompt.string('Your answer:')
     correct_answer = even_number(number)
     return user_answer, correct_answer
 
