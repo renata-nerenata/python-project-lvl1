@@ -7,8 +7,6 @@ import math
 from brain_games.cli import welcome_user
 from brain_games.check_answer import check_answer
 
-import math
-
 
 def is_prime(number):
     """Check prime number

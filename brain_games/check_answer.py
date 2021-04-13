@@ -19,6 +19,3 @@ def check_answer(user_answer, correct_answer, counter):
     else:
         print("'{}' is wrong answer ;(. Correct answer was '{}'".format(user_answer, correct_answer))
         return -1
-
-if __name__ == '__main__':
-    check_answer(user_answer, correct_answer, name)
