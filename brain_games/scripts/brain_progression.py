@@ -19,7 +19,8 @@ def print_random_progression():
     lost_item = random.randint(0, number_elements - 1)
     correct_answer = str(progression_list[lost_item])
     progression_list[lost_item] = '..'
-    print('Question: {}'.format(progression_list))
+    progression_list_str = ' '.join(str(x) for x in progression_list)
+    print('Question: {}'.format(progression_list_str))
     user_answer = prompt.string('Your answer: ')
     return user_answer, correct_answer
 
