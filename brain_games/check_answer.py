@@ -17,5 +17,6 @@ def check_answer(user_answer, correct_answer, counter):
         print("Correct!")
         return counter
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(user_answer, correct_answer))
+        print("'{}' is wrong answer ;(.".format(user_answer))
+        print("Correct answer was '{}'".format(correct_answer))
         return -1
