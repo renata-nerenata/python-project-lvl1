@@ -28,7 +28,7 @@ def main():
     n_times = 0
     while n_times < 3:
         user_answer, correct_answer = print_random_gcd()
-        counter = check_answer(user_answer, correct_answer, name, counter)
+        counter = check_answer(user_answer, correct_answer, counter)
         n_times += 1
         if counter == 3:
             print('Congratulations, {}!'.format(name))
