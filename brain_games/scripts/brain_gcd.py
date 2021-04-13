@@ -32,6 +32,9 @@ def main():
         n_times += 1
         if counter == 3:
             print('Congratulations, {}!'.format(name))
+        if counter == -1:
+            print("Let\'s try again, {}!".format(name))
+            break
 
 
 if __name__ == '__main__':

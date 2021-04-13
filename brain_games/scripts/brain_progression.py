@@ -15,8 +15,8 @@ def print_random_progression():
     progression_list = []
     for i in range(1, number_elements + 1):
         progression_list.append(number_start)
-        number_start = number_start+number_dif
-    lost_item = random.randint(0, number_elements-1)
+        number_start = number_start + number_dif
+    lost_item = random.randint(0, number_elements - 1)
     correct_answer = str(progression_list[lost_item])
     progression_list[lost_item] = '..'
     print('Question: {}'.format(progression_list))
@@ -38,6 +38,9 @@ def main():
         n_times += 1
         if counter == 3:
             print('Congratulations, {}!'.format(name))
+        if counter == -1:
+            print("Let\'s try again, {}!".format(name))
+            break
 
 
 if __name__ == '__main__':

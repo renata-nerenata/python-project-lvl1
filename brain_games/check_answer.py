@@ -1,7 +1,7 @@
 """This is script helps check up user answer."""
 
 
-def check_answer(user_answer, correct_answer, name, counter):
+def check_answer(user_answer, correct_answer, counter):
 
     """Check right answer function.
         Args:
@@ -17,9 +17,8 @@ def check_answer(user_answer, correct_answer, name, counter):
         print("Correct!")
         return counter
     else:
-        print("'{}' is wrong answer ;(. Correct answer was '{}'.\nLet\'s try again, {}!".format(user_answer, correct_answer, name))
-
-
+        print("'{}' is wrong answer ;(. Correct answer was '{}'".format(user_answer, correct_answer))
+        return -1
 
 if __name__ == '__main__':
     check_answer(user_answer, correct_answer, name)
