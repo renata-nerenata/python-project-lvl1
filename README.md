@@ -13,7 +13,7 @@ pip install --user
 make brain-even
 ```
 An user is shown a random number. The user needs to answer "yes" if the number is even or "no" if it is odd.
-[![Even Numbers](https://asciinema.org/a/zr1NixlMn7VTSeelRCEMBykWr)](https://asciinema.org/a/zr1NixlMn7VTSeelRCEMBykWr)
+[![asciicast](https://asciinema.org/a/zr1NixlMn7VTSeelRCEMBykWr.svg)](https://asciinema.org/a/zr1NixlMn7VTSeelRCEMBykWr)
 
 ### Game: "Calculator":
 ```console
