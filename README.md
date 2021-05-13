@@ -6,7 +6,7 @@
 
 ## Start 
 ```console
-pip install --user
+poetry install --user
 ```
 ### Game: "Even Numbers":
 ```console
