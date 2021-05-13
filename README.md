@@ -5,4 +5,21 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
 ### Game: "Even Numbers":
+An user is shown a random number. The user needs to answer "yes" if the number is even or "no" if it is odd.
 [![Even Numbers](https://asciinema.org/a/zr1NixlMn7VTSeelRCEMBykWr)](https://asciinema.org/a/zr1NixlMn7VTSeelRCEMBykWr)
+
+### Game: "Calculator":
+An user is shown a random mathematical expression, for example 35 + 16, which needs to be calculated and written down the correct answer.
+[![Calculator](https://asciinema.org/a/0ewxXcO8NbpgVddR7N0rijFvD)](https://asciinema.org/a/0ewxXcO8NbpgVddR7N0rijFvD)
+
+### Game: "Greatest common divisor game": 
+An user is shown two random numbers, for example, 25 and 50. The user needs calculate and enter the greatest common divisor of these numbers.
+[![GCDG](https://asciinema.org/a/x2SNCQzBoC1JvYyilT8wB7vP6)](https://asciinema.org/a/x2SNCQzBoC1JvYyilT8wB7vP6)
+
+### Game: "Arithmetic Progression":
+An user is shown a series of numbers, forming an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
+[![Arithmetic Progression](https://asciinema.org/a/5iKqqWDRr7IBDbwNGKexOFSZo)](https://asciinema.org/a/5iKqqWDRr7IBDbwNGKexOFSZo)
+
+### Game: "Is it a Prime Number?":
+An user is shown a random number. The user needs to answer "yes" if the number is prime or "no" if it is not.
+[![Is it a Prime Number?](https://asciinema.org/a/ryD8HlIEGJQu1JSgcRWCLYjVN)](https://asciinema.org/a/ryD8HlIEGJQu1JSgcRWCLYjVN)
