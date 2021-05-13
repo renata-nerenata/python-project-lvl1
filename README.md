@@ -20,25 +20,25 @@ An user is shown a random number. The user needs to answer "yes" if the number i
 make brain-calc
 ```
 An user is shown a random mathematical expression, for example 35 + 16, which needs to be calculated and written down the correct answer.
-[![Calculator](https://asciinema.org/a/0ewxXcO8NbpgVddR7N0rijFvD)](https://asciinema.org/a/0ewxXcO8NbpgVddR7N0rijFvD)
+[![asciicast](https://asciinema.org/a/0ewxXcO8NbpgVddR7N0rijFvD.svg)](https://asciinema.org/a/0ewxXcO8NbpgVddR7N0rijFvD)
 
 ### Game: "Greatest common divisor": 
 ```console
 make brain-gdc
 ```
 An user is shown two random numbers, for example, 25 and 50. The user needs calculate and enter the greatest common divisor of these numbers.
-[![GCDG](https://asciinema.org/a/x2SNCQzBoC1JvYyilT8wB7vP6)](https://asciinema.org/a/x2SNCQzBoC1JvYyilT8wB7vP6)
+[![asciicast](https://asciinema.org/a/x2SNCQzBoC1JvYyilT8wB7vP6.svg)](https://asciinema.org/a/x2SNCQzBoC1JvYyilT8wB7vP6)
 
 ### Game: "Arithmetic Progression":
 ```console
 make brain-progression
 ```
 An user is shown a series of numbers, forming an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
-[![Arithmetic Progression](https://asciinema.org/a/5iKqqWDRr7IBDbwNGKexOFSZo)](https://asciinema.org/a/5iKqqWDRr7IBDbwNGKexOFSZo)
+[![asciicast](https://asciinema.org/a/5iKqqWDRr7IBDbwNGKexOFSZo.svg)](https://asciinema.org/a/5iKqqWDRr7IBDbwNGKexOFSZo)
 
 ### Game: "Is it a Prime Number?":
 ```console
 make brain-prime
 ```
 An user is shown a random number. The user needs to answer "yes" if the number is prime or "no" if it is not.
-[![Is it a Prime Number?](https://asciinema.org/a/ryD8HlIEGJQu1JSgcRWCLYjVN)](https://asciinema.org/a/ryD8HlIEGJQu1JSgcRWCLYjVN)
+[![asciicast](https://asciinema.org/a/ryD8HlIEGJQu1JSgcRWCLYjVN.svg)](https://asciinema.org/a/ryD8HlIEGJQu1JSgcRWCLYjVN)
