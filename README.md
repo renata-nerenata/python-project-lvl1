@@ -13,6 +13,7 @@ pip install --user
 make brain-even
 ```
 An user is shown a random number. The user needs to answer "yes" if the number is even or "no" if it is odd.
+
 [![asciicast](https://asciinema.org/a/zr1NixlMn7VTSeelRCEMBykWr.svg)](https://asciinema.org/a/zr1NixlMn7VTSeelRCEMBykWr)
 
 ### Game: "Calculator":
@@ -20,6 +21,7 @@ An user is shown a random number. The user needs to answer "yes" if the number i
 make brain-calc
 ```
 An user is shown a random mathematical expression, for example 35 + 16, which needs to be calculated and written down the correct answer.
+
 [![asciicast](https://asciinema.org/a/0ewxXcO8NbpgVddR7N0rijFvD.svg)](https://asciinema.org/a/0ewxXcO8NbpgVddR7N0rijFvD)
 
 ### Game: "Greatest common divisor": 
@@ -27,6 +29,7 @@ An user is shown a random mathematical expression, for example 35 + 16, which ne
 make brain-gdc
 ```
 An user is shown two random numbers, for example, 25 and 50. The user needs calculate and enter the greatest common divisor of these numbers.
+
 [![asciicast](https://asciinema.org/a/x2SNCQzBoC1JvYyilT8wB7vP6.svg)](https://asciinema.org/a/x2SNCQzBoC1JvYyilT8wB7vP6)
 
 ### Game: "Arithmetic Progression":
@@ -34,6 +37,7 @@ An user is shown two random numbers, for example, 25 and 50. The user needs calc
 make brain-progression
 ```
 An user is shown a series of numbers, forming an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
+
 [![asciicast](https://asciinema.org/a/5iKqqWDRr7IBDbwNGKexOFSZo.svg)](https://asciinema.org/a/5iKqqWDRr7IBDbwNGKexOFSZo)
 
 ### Game: "Is it a Prime Number?":
@@ -41,4 +45,5 @@ An user is shown a series of numbers, forming an arithmetic progression, replaci
 make brain-prime
 ```
 An user is shown a random number. The user needs to answer "yes" if the number is prime or "no" if it is not.
+
 [![asciicast](https://asciinema.org/a/ryD8HlIEGJQu1JSgcRWCLYjVN.svg)](https://asciinema.org/a/ryD8HlIEGJQu1JSgcRWCLYjVN)
