@@ -37,7 +37,7 @@ def main():
     """Prime Game function.
     Print task three times
     """
-    open_phrase = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    open_phrase = 'Answer "yes" if given number is prime. Otherwise answer "no"'
     game = print_random_number
     flow(open_phrase, game)
 
