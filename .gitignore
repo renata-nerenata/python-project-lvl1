@@ -2,3 +2,6 @@
 /.venv
 .idea
 /env
+/dist
+.DS_Store
+/brain_games/.DS_Store

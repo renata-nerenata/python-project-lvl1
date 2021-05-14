@@ -3,9 +3,7 @@
 import prompt
 import random
 import math
-
-from brain_games.cli import welcome_user
-from brain_games.check_answer import check_answer
+from brain_games.main_flow import flow
 
 
 def is_prime(number):
@@ -36,22 +34,12 @@ def print_random_number():
 
 
 def main():
-    """Calculator Game function.
+    """Prime Game function.
     Print task three times
     """
-    name = welcome_user()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    counter = 0
-    n_times = 0
-    while n_times < 3:
-        user_answer, correct_answer = print_random_number()
-        counter = check_answer(user_answer, correct_answer, counter)
-        n_times += 1
-        if counter == 3:
-            print('Congratulations, {}!'.format(name))
-        if counter == -1:
-            print("Let\'s try again, {}!".format(name))
-            break
+    open_phrase = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    game = print_random_number
+    flow(open_phrase, game)
 
 
 if __name__ == '__main__':

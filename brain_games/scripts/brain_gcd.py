@@ -3,9 +3,7 @@
 import prompt
 import random
 import math
-
-from brain_games.cli import welcome_user
-from brain_games.check_answer import check_answer
+from brain_games.main_flow import flow
 
 
 def print_random_gcd():
@@ -19,22 +17,12 @@ def print_random_gcd():
 
 
 def main():
-    """Calculator Game function.
+    """Greatest common divisor Game function.
     Print task three times
     """
-    name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
-    counter = 0
-    n_times = 0
-    while n_times < 3:
-        user_answer, correct_answer = print_random_gcd()
-        counter = check_answer(user_answer, correct_answer, counter)
-        n_times += 1
-        if counter == 3:
-            print('Congratulations, {}!'.format(name))
-        if counter == -1:
-            print("Let\'s try again, {}!".format(name))
-            break
+    open_phrase = 'Find the greatest common divisor of given numbers.'
+    game = print_random_gcd
+    flow(open_phrase, game)
 
 
 if __name__ == '__main__':
