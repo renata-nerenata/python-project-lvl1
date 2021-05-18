@@ -34,4 +34,3 @@ def flow(open_phrase, game):
         congrats_or_fail(counter, name)
         if counter == -1:
             break
-
