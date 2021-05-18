@@ -9,10 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/checkout@v2
       - name: Install dependencies
       - run: |
           pip install poetry
           make install
       - name: Lint
-        run: make lint
+      - run: make lint
