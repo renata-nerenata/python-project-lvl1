@@ -1,7 +1,6 @@
 """Main flow."""
 
-from brain_games.congrats import congrats_or_fail
-from brain_games.first_question import open_game
+from brain_games.cli import welcome_user
 
 
 def check_answer(user_answer, correct_answer, counter):
@@ -25,8 +24,19 @@ def check_answer(user_answer, correct_answer, counter):
         return -1
 
 
+def congrats_or_fail(counter, name):
+    """
+    Print congratulation or fail phrase
+    """
+    if counter == 3:
+        print('Congratulations, {}!'.format(name))
+    if counter == -1:
+        print("Let\'s try again, {}!".format(name))
+
+
 def flow(open_phrase, game):
-    name = open_game(open_phrase)
+    name = welcome_user()
+    print(open_phrase)
     counter = 0
     while counter < 3:
         user_answer, correct_answer = game()

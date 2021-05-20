@@ -1,7 +1,7 @@
 """Greatest common divisor Game."""
 
 from brain_games.main_flow import flow
-from brain_games.games.brain_gcd_game import brain_gcd_game
+from brain_games.games.brain_gcd import brain_gcd_game
 
 
 def main():

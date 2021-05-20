@@ -1,7 +1,7 @@
 """Prime number Game."""
 
 from brain_games.main_flow import flow
-from brain_games.games.brain_prime_game import brain_prime_game
+from brain_games.games.brain_prime import brain_prime_game
 
 
 def main():

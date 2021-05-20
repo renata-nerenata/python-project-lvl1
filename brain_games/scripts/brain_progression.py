@@ -1,7 +1,7 @@
 """Arithmetic progression Game."""
 
 from brain_games.main_flow import flow
-from brain_games.games.brain_progression_game import brain_progression_game
+from brain_games.games.brain_progression import brain_progression_game
 
 
 def main():

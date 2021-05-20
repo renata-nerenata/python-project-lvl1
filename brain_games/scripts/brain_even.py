@@ -2,7 +2,7 @@
 
 
 from brain_games.main_flow import flow
-from brain_games.games.brain_even_game import brain_even_game
+from brain_games.games.brain_even import brain_even_game
 
 
 def main():
