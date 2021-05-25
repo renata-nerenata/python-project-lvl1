@@ -3,6 +3,9 @@ import random
 import math
 
 
+open_phrase = 'Answer "yes" if given number is prime. Otherwise answer "no"'
+
+
 def is_prime(number):
     """Check prime number
     Args:
@@ -21,7 +24,7 @@ def is_prime(number):
     return 'yes'
 
 
-def print_random_number():
+def print_random_expression():
     """Engine of the Game."""
     number = random.randint(1, 100)
     print('Question: {}'.format(number))
@@ -34,6 +37,5 @@ def brain_prime_game():
     """Prime Game function.
     Print task three times
     """
-    open_phrase = 'Answer "yes" if given number is prime. Otherwise answer "no"'
-    game = print_random_number
-    return open_phrase, game
+    game = print_random_expression
+    return game

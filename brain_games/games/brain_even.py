@@ -4,6 +4,9 @@ import prompt
 import random
 
 
+open_phrase = 'Answer "yes" if the number is even, otherwise answer "no".'
+
+
 def even_number(number):
     """Parity function.
 
@@ -18,7 +21,7 @@ def even_number(number):
         return 'no'
 
 
-def print_random_number():
+def print_random_expression():
     """Engine of the Game."""
     number = random.randint(1, 99)
     print('Question:', number)
@@ -31,6 +34,6 @@ def brain_even_game():
     """Parity Game function.
     Print task three times
     """
-    open_phrase = 'Answer "yes" if the number is even, otherwise answer "no".'
-    game = print_random_number
-    return open_phrase, game
+
+    game = print_random_expression
+    return game

@@ -5,7 +5,10 @@ import random
 import math
 
 
-def print_random_gcd():
+open_phrase = 'Find the greatest common divisor of given numbers.'
+
+
+def print_random_expression():
     """Engine of the Game."""
     number_a = random.randint(1, 100)
     number_b = random.randint(1, 100)
@@ -19,6 +22,5 @@ def brain_gcd_game():
     """Greatest common divisor Game function.
     Print task three times
     """
-    open_phrase = 'Find the greatest common divisor of given numbers.'
-    game = print_random_gcd
-    return open_phrase, game
+    game = print_random_expression
+    return game

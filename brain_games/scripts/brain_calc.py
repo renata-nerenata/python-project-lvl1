@@ -1,14 +1,14 @@
 """Calculator Game."""
+from brain_games.games import brain_calc
 from brain_games.main_flow import flow
-from brain_games.games.brain_calc import brain_calc_game
 
 
 def main():
     """Parity Game function.
     Print task three times
     """
-    open_phrase, game = brain_calc_game()
-    flow(open_phrase, game)
+    game = brain_calc
+    flow(game)
 
 
 if __name__ == '__main__':

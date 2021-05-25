@@ -4,7 +4,10 @@ import prompt
 import random
 
 
-def print_random_progression():
+open_phrase = 'What number is missing in the progression?'
+
+
+def print_random_expression():
     """Engine of the Game."""
     number_start = random.randint(1, 100)
     number_dif = random.randint(1, 20)
@@ -26,6 +29,5 @@ def brain_progression_game():
     """Progression Game function.
     Print task three times
     """
-    open_phrase = 'What number is missing in the progression?'
-    game = print_random_progression
-    return open_phrase, game
+    game = print_random_expression
+    return game

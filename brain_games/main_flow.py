@@ -34,12 +34,12 @@ def congrats_or_fail(counter, name):
         print("Let\'s try again, {}!".format(name))
 
 
-def flow(open_phrase, game):
+def flow(game):
     name = welcome_user()
-    print(open_phrase)
+    print(game.open_phrase)
     counter = 0
     while counter < 3:
-        user_answer, correct_answer = game()
+        user_answer, correct_answer = game.print_random_expression()
         counter = check_answer(user_answer, correct_answer, counter)
         congrats_or_fail(counter, name)
         if counter == -1:
