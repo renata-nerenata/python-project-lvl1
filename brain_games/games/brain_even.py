@@ -20,7 +20,7 @@ def even_number(number):
         return 'no'
 
 
-def print_random_expression():
+def get_question_and_answer():
     """Engine of the Game."""
     number = random.randint(1, 99)
     question = 'Question: {}'.format(number)
@@ -33,5 +33,4 @@ def brain_even_game():
     Print task three times
     """
 
-    game = print_random_expression
-    return game
+    return get_question_and_answer

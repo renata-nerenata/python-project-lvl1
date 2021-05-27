@@ -7,7 +7,7 @@ import operator
 open_phrase = 'What is the result of the expression?'
 
 
-def print_random_expression():
+def get_question_and_answer():
     """Engine of the Game."""
     number_a = random.randint(1, 10)
     number_b = random.randint(1, 10)
@@ -24,4 +24,4 @@ def brain_calc_game():
     """Parity Game function.
     Print task three times
     """
-    return print_random_expression
+    return get_question_and_answer

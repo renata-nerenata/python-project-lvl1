@@ -25,7 +25,7 @@ def is_prime(number):
     return 'yes'
 
 
-def print_random_expression():
+def get_question_and_answer():
     """Engine of the Game."""
     number = random.randint(1, 100)
     question = 'Question: {}'.format(number)
@@ -37,5 +37,4 @@ def brain_prime_game():
     """Prime Game function.
     Print task three times
     """
-    game = print_random_expression
-    return game
+    return get_question_and_answer
