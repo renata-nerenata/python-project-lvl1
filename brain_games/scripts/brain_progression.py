@@ -8,8 +8,7 @@ def main():
     """Progression Game function.
     Print task three times
     """
-    game = brain_progression
-    flow(game)
+    flow(brain_progression)
 
 
 if __name__ == '__main__':

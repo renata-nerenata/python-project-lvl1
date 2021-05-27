@@ -1,6 +1,5 @@
 """Greatest common divisor Game."""
 
-import prompt
 import random
 import math
 
@@ -12,10 +11,9 @@ def print_random_expression():
     """Engine of the Game."""
     number_a = random.randint(1, 100)
     number_b = random.randint(1, 100)
-    print('Question: {} {}'.format(number_a, number_b))
-    user_answer = prompt.string('Your answer: ')
+    question = 'Question: {} {}'.format(number_a, number_b)
     correct_answer = str(math.gcd(number_a, number_b))
-    return user_answer, correct_answer
+    return question, correct_answer
 
 
 def brain_gcd_game():

@@ -1,6 +1,5 @@
 """Arithmetic progression Game."""
 
-import prompt
 import random
 
 
@@ -20,9 +19,8 @@ def print_random_expression():
     correct_answer = str(progression_list[lost_item])
     progression_list[lost_item] = '..'
     progression_list_str = ' '.join(str(x) for x in progression_list)
-    print('Question: {}'.format(progression_list_str))
-    user_answer = prompt.string('Your answer: ')
-    return user_answer, correct_answer
+    question = 'Question: {}'.format(progression_list_str)
+    return question, correct_answer
 
 
 def brain_progression_game():

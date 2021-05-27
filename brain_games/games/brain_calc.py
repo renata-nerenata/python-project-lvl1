@@ -1,6 +1,5 @@
 """Calculator Game."""
 
-import prompt
 import random
 import operator
 
@@ -16,15 +15,13 @@ def print_random_expression():
             '-': operator.sub,
             '*': operator.mul}
     expression = random.choice(list(oper.keys()))
-    print('Question: {} {} {}'.format(number_a, expression, number_b))
-    user_answer = prompt.string('Your answer: ')
+    question = 'Question: {} {} {}'.format(number_a, expression, number_b)
     correct_answer = str(oper.get(expression)(number_a, number_b))
-    return user_answer, correct_answer
+    return question, correct_answer
 
 
 def brain_calc_game():
     """Parity Game function.
     Print task three times
     """
-    game = print_random_expression
-    return game
+    return print_random_expression

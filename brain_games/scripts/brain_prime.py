@@ -8,8 +8,7 @@ def main():
     """Prime Game function.
     Print task three times
     """
-    game = brain_prime
-    flow(game)
+    flow(brain_prime)
 
 
 if __name__ == '__main__':

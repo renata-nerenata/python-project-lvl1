@@ -1,6 +1,5 @@
 """Parity Game."""
 
-import prompt
 import random
 
 
@@ -24,10 +23,9 @@ def even_number(number):
 def print_random_expression():
     """Engine of the Game."""
     number = random.randint(1, 99)
-    print('Question:', number)
-    user_answer = str(prompt.string('Your answer: '))
+    question = 'Question: {}'.format(number)
     correct_answer = str(even_number(number))
-    return user_answer, correct_answer
+    return question, correct_answer
 
 
 def brain_even_game():

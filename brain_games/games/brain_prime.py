@@ -1,4 +1,5 @@
-import prompt
+"""Prime number Game."""
+
 import random
 import math
 
@@ -27,10 +28,9 @@ def is_prime(number):
 def print_random_expression():
     """Engine of the Game."""
     number = random.randint(1, 100)
-    print('Question: {}'.format(number))
-    user_answer = prompt.string('Your answer: ')
+    question = 'Question: {}'.format(number)
     correct_answer = str(is_prime(number))
-    return user_answer, correct_answer
+    return question, correct_answer
 
 
 def brain_prime_game():

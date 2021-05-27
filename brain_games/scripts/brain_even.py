@@ -9,8 +9,7 @@ def main():
     """Parity Game function.
     Print task three times
     """
-    game = brain_even
-    flow(game)
+    flow(brain_even)
 
 
 if __name__ == '__main__':

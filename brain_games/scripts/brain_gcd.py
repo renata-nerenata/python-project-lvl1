@@ -8,8 +8,7 @@ def main():
     """Greatest common divisor Game function.
     Print task three times
     """
-    game = brain_gcd
-    flow(game)
+    flow(brain_gcd)
 
 
 if __name__ == '__main__':

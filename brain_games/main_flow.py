@@ -1,6 +1,7 @@
 """Main flow."""
 
 from brain_games.cli import welcome_user
+import prompt
 
 
 def check_answer(user_answer, correct_answer, counter):
@@ -39,7 +40,9 @@ def flow(game):
     print(game.open_phrase)
     counter = 0
     while counter < 3:
-        user_answer, correct_answer = game.print_random_expression()
+        question, correct_answer = game.print_random_expression()
+        print(question)
+        user_answer = prompt.string('Your answer: ')
         counter = check_answer(user_answer, correct_answer, counter)
         congrats_or_fail(counter, name)
         if counter == -1:
