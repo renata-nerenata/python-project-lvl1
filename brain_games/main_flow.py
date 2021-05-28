@@ -40,7 +40,7 @@ def flow(game):
     print(game.open_phrase)
     counter = 0
     while counter < 3:
-        question, correct_answer = game.print_random_expression()
+        question, correct_answer = game.get_question_and_answer()
         print(question)
         user_answer = prompt.string('Your answer: ')
         counter = check_answer(user_answer, correct_answer, counter)
