@@ -1,6 +1,6 @@
 """Greatest common divisor Game."""
 
-from brain_games.main_flow import flow
+from brain_games.main import flow
 from brain_games.games import brain_gcd
 
 

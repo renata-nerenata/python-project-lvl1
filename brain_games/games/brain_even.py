@@ -3,10 +3,10 @@
 import random
 
 
-open_phrase = 'Answer "yes" if the number is even, otherwise answer "no".'
+PHRASE_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def even_number(number):
+def is_even(number):
     """Parity function.
 
     Args:
@@ -15,17 +15,24 @@ def even_number(number):
         str answer
     """
     if number % 2 == 0:
-        return 'yes'
+        return True
     else:
-        return 'no'
+        return False
+
+
+def answer_reshape(number):
+    """Transform Bool value to string answer"""
+    if is_even(number):
+        return 'yes'
+    return 'no'
 
 
 def get_question_and_answer():
     """Engine of the Game."""
     number = random.randint(1, 99)
-    question = 'Question: {}'.format(number)
-    correct_answer = str(even_number(number))
-    return question, correct_answer
+    question_expression = '{}'.format(number)
+    correct_answer = str(answer_reshape(number))
+    return question_expression, correct_answer
 
 
 def brain_even_game():

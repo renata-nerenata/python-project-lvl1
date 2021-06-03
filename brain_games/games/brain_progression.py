@@ -3,7 +3,7 @@
 import random
 
 
-open_phrase = 'What number is missing in the progression?'
+PHRASE_RULE = 'What number is missing in the progression?'
 
 
 def get_question_and_answer():
@@ -19,8 +19,8 @@ def get_question_and_answer():
     correct_answer = str(progression_list[lost_item])
     progression_list[lost_item] = '..'
     progression_list_str = ' '.join(str(x) for x in progression_list)
-    question = 'Question: {}'.format(progression_list_str)
-    return question, correct_answer
+    question_expression = '{}'.format(progression_list_str)
+    return question_expression, correct_answer
 
 
 def brain_progression_game():

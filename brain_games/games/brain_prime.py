@@ -4,7 +4,7 @@ import random
 import math
 
 
-open_phrase = 'Answer "yes" if given number is prime. Otherwise answer "no"'
+PHRASE_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no"'
 
 
 def is_prime(number):
@@ -15,22 +15,29 @@ def is_prime(number):
         str answer
     """
     if number == 2:
-        return 'yes'
+        return True
     if number % 2 == 0 or number <= 1:
-        return 'no'
+        return False
     sqr = int(math.sqrt(number)) + 1
     for divisor in range(3, sqr, 2):
         if number % divisor == 0:
-            return 'no'
-    return 'yes'
+            return False
+    return True
+
+
+def answer_reshape(number):
+    """Transform Bool value to string answer"""
+    if is_prime(number):
+        return 'yes'
+    return 'no'
 
 
 def get_question_and_answer():
     """Engine of the Game."""
     number = random.randint(1, 100)
-    question = 'Question: {}'.format(number)
-    correct_answer = str(is_prime(number))
-    return question, correct_answer
+    question_expression = '{}'.format(number)
+    correct_answer = answer_reshape(number)
+    return question_expression, correct_answer
 
 
 def brain_prime_game():

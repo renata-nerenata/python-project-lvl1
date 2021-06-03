@@ -4,16 +4,16 @@ import random
 import math
 
 
-open_phrase = 'Find the greatest common divisor of given numbers.'
+PHRASE_RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def get_question_and_answer():
     """Engine of the Game."""
     number_a = random.randint(1, 100)
     number_b = random.randint(1, 100)
-    question = 'Question: {} {}'.format(number_a, number_b)
+    question_expression = '{} {}'.format(number_a, number_b)
     correct_answer = str(math.gcd(number_a, number_b))
-    return question, correct_answer
+    return question_expression, correct_answer
 
 
 def brain_gcd_game():
