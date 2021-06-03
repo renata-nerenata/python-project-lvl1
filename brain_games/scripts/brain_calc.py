@@ -1,4 +1,5 @@
 """Calculator Game."""
+
 from brain_games.games import brain_calc
 from brain_games.main import flow
 

@@ -38,10 +38,3 @@ def get_question_and_answer():
     question_expression = '{}'.format(number)
     correct_answer = answer_reshape(number)
     return question_expression, correct_answer
-
-
-def brain_prime_game():
-    """Prime Game function.
-    Print task three times
-    """
-    return get_question_and_answer

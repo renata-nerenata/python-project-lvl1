@@ -21,10 +21,3 @@ def get_question_and_answer():
     progression_list_str = ' '.join(str(x) for x in progression_list)
     question_expression = '{}'.format(progression_list_str)
     return question_expression, correct_answer
-
-
-def brain_progression_game():
-    """Progression Game function.
-    Print task three times
-    """
-    return get_question_and_answer

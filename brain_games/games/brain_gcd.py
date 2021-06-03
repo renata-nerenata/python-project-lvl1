@@ -14,10 +14,3 @@ def get_question_and_answer():
     question_expression = '{} {}'.format(number_a, number_b)
     correct_answer = str(math.gcd(number_a, number_b))
     return question_expression, correct_answer
-
-
-def brain_gcd_game():
-    """Greatest common divisor Game function.
-    Print task three times
-    """
-    return get_question_and_answer
